@@ -11,6 +11,6 @@ docker push shoheihosaka/udemy-multi-worker:$SHA
 
 
 kubectl apply -f k8s
-kubectl set image deploymetns/client-deployment client=shoheihosaka/udemy-multi-client:$SHA
-kubectl set image deploymetns/server-deployment server=shoheihosaka/udemy-multi-server:$SHA
-kubectl set image deploymetns/worker-deployment worker=shoheihosaka/udemy-multi-worker:$SHA
+kubectl set image deployments/client-deployment client=shoheihosaka/udemy-multi-client:$SHA
+kubectl set image deployments/server-deployment server=shoheihosaka/udemy-multi-server:$SHA
+kubectl set image deployments/worker-deployment worker=shoheihosaka/udemy-multi-worker:$SHA
